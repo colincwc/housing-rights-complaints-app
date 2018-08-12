@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['housing-rights-app-deasunod.c9users.io']
+ALLOWED_HOSTS = ['housing-rights-app-deasunod.c9users.io', '8300768718274e4cbc4cd5f34afd48e0.vfs.cloud9.eu-west-1.amazonaws.com']
 
 
 # Application definition
