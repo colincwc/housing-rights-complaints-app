@@ -2,16 +2,18 @@
 
 {% load bootstrap_tags %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Complaint Submitted{% endblock %}
 
 {% block content %}
 <div class='container'>
     <div class='row'>
         <div class='col-md-4'></div>
         <div class='col-md-4'>
+            <div class='alert alert-success' role='alert'>
+                Your complaint is now on its way to the relevant statutory bodies.
+            </div>
             <form method='POST'>
-                {% csrf_token %} {{ post_code | as_bootstrap }}
-                <button type="submit" class="btn btn-lg btn-success">Get Started</button>
+                <a href='/personal/report' class="btn btn-lg btn-success">Report another issue</a>
             </form>
         </div>
         <div class='col-md-4'></div>

@@ -2,11 +2,19 @@
 
 {% load bootstrap_tags %}
 
+{% block title %}Report an issue{% endblock %}
+
 {% block content %}
-<div class="col-xs-12 col-md-4 col-md-pull-4">
-    <form method='POST'>
-        {% csrf_token %} {{ theme | as_bootstrap }}
-        <button type="submit" class="btn btn-lg btn-success">Next Step</button>
-    </form>
+<div class='container'>
+    <div class='row'>
+        <div class='col-md-4'></div>
+        <div class='col-md-4'>
+            <form method='POST'>
+                {% csrf_token %} {{ theme | as_bootstrap }}
+                <button type="submit" class="btn btn-lg btn-success">Next Step</button>
+            </form>
+        </div>
+        <div class='col-md-4'></div>
+    </div>
 </div>
 {% endblock %}

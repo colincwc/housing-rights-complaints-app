@@ -87,15 +87,16 @@ def complaint(request):
             """
             
             #str(p[0])
-            return redirect ('thanks')
+            return redirect ('confirmed')
             
         #if id:
         #    messages.success(request, "Details submitted")
         #    return redirect('thanks')
     return render(request, 'complaint.html')
 
-def thanks(request):
+def confirmed(request):
     """
-    Thanks
+    Complaint Submitted
     """
-    print("Thanks")
+    
+    return render(request, 'confirmed.html')
