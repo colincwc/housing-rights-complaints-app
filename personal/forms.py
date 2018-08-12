@@ -7,7 +7,7 @@ class PersonalForm(forms.Form):
 	full_name = forms.CharField()
 	date_of_birth = forms.CharField()
 	address = forms.CharField(widget=forms.Textarea)
-	temp_address = forms.BooleanField()
+	temp_address = forms.BooleanField(required=False)
 	telephone = forms.CharField()
 	num_in_household = forms.IntegerField()
 	num_children = forms.IntegerField()
