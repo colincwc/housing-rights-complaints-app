@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% load bootstrap_tags %}
+
+{% block content %}
+<div class="col-xs-12 col-md-4 col-md-pull-4">
+    <form method='POST'>
+        {% csrf_token %} {{ theme | as_bootstrap }}
+        <button type="submit" class="btn btn-lg btn-success">Next Step</button>
+    </form>
+</div>
+{% endblock %}
