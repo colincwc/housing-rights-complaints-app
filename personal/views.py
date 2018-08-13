@@ -92,7 +92,7 @@ def complaint(request):
         #if id:
         #    messages.success(request, "Details submitted")
         #    return redirect('thanks')
-    return render(request, 'complaint.html')
+    return render(request, 'complaint.html', { 'complaint' : complaints_form })
 
 def confirmed(request):
     """

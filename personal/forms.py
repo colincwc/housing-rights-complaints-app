@@ -38,7 +38,7 @@ class StatsForm_theme(forms.ModelForm):
 
 class ComplaintsForm(forms.Form):
     # create fields, view
-    what_happened = ''
-    what_did_you_do = ''
-    what_did_they_say = ''
-    what_do_you_want = ''
+    description = CharField(widget=forms.Textarea)
+    action = CharField(widget=forms.Textarea)
+    response = CharField(widget=forms.Textarea)
+    remedy = CharField(widget=forms.Textarea)
