@@ -89,6 +89,9 @@ def complaint(request):
             #str(p[0])
             return redirect ('confirmed')
             
+    else:
+            complaints_form = ComplaintsForm()
+
         #if id:
         #    messages.success(request, "Details submitted")
         #    return redirect('thanks')
